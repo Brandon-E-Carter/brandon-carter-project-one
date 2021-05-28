@@ -830,10 +830,6 @@ form textarea {
   }
 }
 @media (max-width: 1600px) {
-  header {
-    height: auto;
-  }
-
   .contact-header {
     height: auto;
   }
