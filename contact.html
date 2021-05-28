@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Page</title>
+
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet">
+    
+    <script src="https://kit.fontawesome.com/aca4e15455.js" crossorigin="anonymous"></script>
+    
+    <link rel="stylesheet" href="./styles/style.css">
+</head>
+
+<body>
+    <header class="contact-header">
+        <nav class="navigation flex-container wrapper">
+            <ul class="flex-container">
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#home-about">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#" class="selected-page">Contact</a></li>
+            </ul>
+            <a href="#" class="hamburger fas fa-bars"></a>
+        </nav>
+        <h2>Get in touch</h2>
+        <div class="contact-sheet">
+            <ul class="flex-container social">
+                <li><a href="https://www.facebook.com/" class="fab fa-facebook-f"></a></li>
+                <li><a href="https://www.instagram.com/" class="fab fa-instagram"></a></li>
+                <li><a href="https://twitter.com/" class="fab fa-twitter"></a></li>
+                <li><a href="https://www.whatsapp.com/" class="fab fa-whatsapp"></a></li>
+            </ul>
+            <p><a href="#">Info@email.com</a></p>
+            <ul>
+                <li>123-456-7890</li>
+                <li>123 Queen Street West, Unit 10</li>
+                <li>Toronto, Ontario</li>
+                <li>M5V2D5</li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="contact-main flex-container wrapper">
+        <section class="contact-form">
+            <div class="form-container">
+                <form action="submit" class="flex-container">
+                    <div class="form-top flex-container">
+                        <div>
+                            <label for="name" class="sr-only"></label>
+                            <input type="text" name="name" id="name" placeholder="Name">
+                        </div>
+                        <div>
+                            <label for="email" class="sr-only"></label>
+                            <input type="email" name="email" id="email" placeholder="Email address">
+                        </div>
+                    </div>
+                    <div class="form-message">
+                        <label for="message" class="sr-only"></label>
+                        <textarea name="message" id="message" placeholder="Message" cols="30" rows="10"></textarea>
+                    </div>
+                    <button type="submit" class="user-button">Submit</button>
+                    <!-- <input type="button" value="Post comment" class="user-button"> -->
+                </form>
+            </div>
+        </section>
+
+        <aside class="contact-sheet">
+            <ul class="flex-container social">
+                <li><a href="https://www.facebook.com/" class="fab fa-facebook-f"></a></li>
+                <li><a href="https://www.instagram.com/" class="fab fa-instagram"></a></li>
+                <li><a href="https://twitter.com/" class="fab fa-twitter"></a></li>
+                <li><a href="https://www.whatsapp.com/" class="fab fa-whatsapp"></a></li>
+            </ul>
+            <p><a href="#">Info@email.com</a></p>
+            <ul>
+                <li>123-456-7890</li>
+                <li>123 Queen Street West, Unit 10</li>
+                <li>Toronto, Ontario</li>
+                <li>M5V2D5</li>
+            </ul>
+        </aside>
+    </main>
+
+    <footer>
+        <p>Copyright © 2021 Juno College</p>
+    </footer>
+</body>
+</html>

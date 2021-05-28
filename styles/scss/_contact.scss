@@ -1,0 +1,66 @@
+@import "variables";
+
+.contact-header {
+    height: 71vh;
+    background-image: url(../under-the-sea-assets/contact-header.jpg);
+
+ div.contact-sheet {
+        display: none;
+    }
+}
+
+.contact-main {
+    justify-content: space-between;
+
+    padding: 130px 0;
+
+    .contact-form {
+        position: relative;
+        width: 1070px;
+        
+        .form-container {
+            position: absolute;
+            background: $secondary;
+            
+            width: 100%;
+            padding: 70px;
+
+            bottom: 0;
+            left: 0;
+
+            @include box-shadow-pos("left");
+        }
+
+        form {
+            justify-content: space-between;
+            height: 500px;           
+        }
+        
+        .user-button {
+            background: $tertiary;
+            color: white;
+        }
+
+        .user-button:hover,
+        .user-button:focus {
+            background: rgb(79, 137, 190);
+        }
+    }
+}
+
+.contact-sheet {
+
+    .social a {
+        padding: 5px;
+        margin-right: 10px;
+    }
+
+    p {
+        margin: 15px 0;
+    }
+
+    ul {
+        margin: 0;
+        padding: 0;
+    }
+}

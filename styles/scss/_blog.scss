@@ -1,0 +1,177 @@
+@import "variables";
+
+input,
+textarea,
+button {
+    @include font-2();
+    color: white;
+
+    background: none;
+    border: none;
+}
+
+button {
+    text-transform: uppercase;
+}
+
+input::placeholder,
+textarea::placeholder {
+    opacity: 1;
+}
+
+p {
+    margin: 20px 0 0 0;
+    padding: 0;
+}
+
+aside {
+    order: -1;
+}
+
+.blog-date {
+    margin: 0;
+    padding: 0;
+}
+
+.blog-header {
+    height: 71vh;
+    
+    background-image: url(../under-the-sea-assets/blog-header.jpg);
+}
+
+.blog {
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+
+.blog-main {
+    width: 1180px;
+    
+    .blog-post {
+        box-shadow: -4px 4px $primary;
+        padding-left: 36px;
+        
+        .image-container {
+            position: relative;
+        
+            height: 480px;
+    
+            img {
+                width: 100%;
+                @include box-shadow-pos("left");
+        
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+        }
+        
+        .text-container {
+            margin-top: 40px;
+            padding: 40px 20px;
+
+            .blog-text {
+                margin-top: 50px;
+            }
+        }
+    }
+
+    .comments {
+        margin: 50px 30px;
+        
+        .comment {
+            margin: 50px 0 80px;
+            
+            .image-container {
+                margin: 8px 30px 0 0;
+            }
+        }
+    }
+}
+
+.blog-about {    
+    width: 430px;
+    height: max-content;
+    margin: 160px 0 0 190px;
+
+    .image-container {
+        position: relative;
+        height: 500px;
+
+        img {
+            width: 607px;
+
+            position: absolute;
+            bottom: 10px;
+            right: 20px;
+        }
+    }
+
+    .text-container {
+        padding: 20px;
+
+        .recent-posts {
+            padding-top: 80px;
+
+            ul {
+                list-style-position: outside;
+                padding-left: 5px;
+                
+                li {
+                    list-style: initial;
+                    padding-left: 10px;
+
+                    a {
+                        text-transform: unset;
+                    }
+                }
+            }
+        }
+    }
+}
+    
+form {
+    flex-direction: column;
+    justify-content: space-between;
+
+    width: 100%;
+
+    .form-top {
+        justify-content: space-between;
+        
+        div {
+            width: 48%;
+        }
+    }
+
+    input,
+    textarea {
+        padding: 20px;
+    }
+
+    input {
+        width: 100%;
+
+        border-bottom: 2px solid $primary;
+    }
+
+    textarea {
+        border: 2px solid $primary;
+
+        width: 100%;
+        margin: 40px 0;
+    }
+}
+
+.comments {
+    .user-button {
+        background: $secondary;
+        color: white;
+    }
+
+    .user-button:hover,
+    .user-button:focus {
+        background: rgb(79, 137, 190);
+    }
+}

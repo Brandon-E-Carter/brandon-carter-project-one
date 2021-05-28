@@ -1,0 +1,28 @@
+$primary: #86E0F9;
+$secondary: #0F614E;
+$tertiary: #0C1423;
+
+$box-shadow-size: 40px;
+
+@mixin font-1() {
+    font-family: 'Barlow', sans-serif;
+}
+
+@mixin font-2() {
+    font-family: 'Lato', sans-serif;
+}
+
+@mixin box-shadow-pos($pos) {
+    $horizontal-shadow: 0px;
+    $vertical-shadow: $box-shadow-size;
+    
+    @if $pos == "left"{
+        $horizontal-shadow: -$box-shadow-size;
+    }
+
+    @else if $pos == "right" {
+        $horizontal-shadow: $box-shadow-size;
+    }
+
+    box-shadow: $horizontal-shadow $box-shadow-size $primary;
+}
