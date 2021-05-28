@@ -66,10 +66,29 @@
 }
 
 @media (max-width: 1600px) {
+    header {
+        height: auto;
+    }
+    
+    .contact-header {
+        height: auto;
+        div.contact-sheet {
+            display:block;
+            text-align: center;
+
+            padding: 40px 0;
+            
+            .social {
+                justify-content: center;
+            }
+        }
+    }
+
     .contact-main {
         padding: 0;
-        margin: 0;
+        margin: 0 auto;
         width: 100%;
+        max-width: 1000px;
 
         .contact-form {
             margin: 0 auto;

@@ -830,10 +830,29 @@ form textarea {
   }
 }
 @media (max-width: 1600px) {
+  header {
+    height: auto;
+  }
+
+  .contact-header {
+    height: auto;
+  }
+  .contact-header div.contact-sheet {
+    display: block;
+    text-align: center;
+    padding: 40px 0;
+  }
+  .contact-header div.contact-sheet .social {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+
   .contact-main {
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
     width: 100%;
+    max-width: 1000px;
   }
   .contact-main .contact-form {
     margin: 0 auto;
