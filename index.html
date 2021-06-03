@@ -13,23 +13,28 @@
     <script src="https://kit.fontawesome.com/aca4e15455.js" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./styles/style.css">
-
-    <script src="./script.js"></script>
-    
 </head>
 
 <body>
     <header>
-        <div">
+        <div>
             <nav class="navigation flex-container wrapper">
-                <ul class="flex-container">
+                <ul class="desktop-nav flex-container">
                     <li><a href="#" class="selected-page">Home</a></li>
                     <li><a href="#home-about">About</a></li>
                     <li><a href="./blog.html">Blog</a></li>
                     <li><a href="./contact.html">Contact</a></li>
                 </ul>
-                
+
                 <a href="#" class="hamburger fas fa-bars"></a>
+
+                <ul class="mobile-nav hidden">
+                    <li><a href="#" class="hamburger fas fa-times"></a></li>
+                    <li><a href="#" class="selected-page">Home</a></li>
+                    <li><a href="#home-about">About</a></li>
+                    <li><a href="./blog.html">Blog</a></li>
+                    <li><a href="./contact.html">Contact</a></li>
+                </ul>
             </nav>
 
             <div class="wrapper-two">
@@ -58,23 +63,25 @@
             <div class="grid-container">
                 <div class="image-container item1">
                     <img src="./under-the-sea-assets/left-image.jpg"
-                    alt="a person standing in front of aquarium glass watching the fish swim">
+                        alt="a person standing in front of aquarium glass watching the fish swim">
                 </div>
 
                 <div class="flex-container item2">
                     <div class="text-container">
                         <h4>New additions</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ab provident fugit ut saepe magnam!
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ab provident fugit ut saepe
+                            magnam!
                             Pariatur blanditiis tempora dolore eaque minima, nesciunt odit harum delectus facere ipsa,
                             aspernatur sed fuga!</p>
                         <div><a href="#" class="user-button">Read more</a></div>
                     </div>
                 </div>
-            
+
                 <div class="flex-container item3">
                     <div class="text-container">
                         <h4>Meet real nemo</h4>
-                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ab provident fugit ut saepe magnam!
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quas ab provident fugit ut saepe
+                            magnam!
                             Pariatur blanditiis tempora dolore eaque minima, nesciunt odit harum delectus facere ipsa,
                             aspernatur sed fuga!</p>
                         <div><a href="#" class="user-button">Read more</a></div>
@@ -169,6 +176,8 @@
     <footer>
         <p>Copyright © 2021 Juno College</p>
     </footer>
+
+    <script src="script.js"></script>
 </body>
 
 </html>

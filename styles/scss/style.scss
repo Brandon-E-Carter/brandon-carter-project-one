@@ -142,15 +142,10 @@ header {
     background-size: cover;
 
     .navigation {
+        position: relative;
         justify-content: flex-end;
         align-items: center;
     
-        .hamburger {
-            display: none;
-            padding: 30px;
-            font-size: 2rem;
-        }
-
         ul {
             margin: 40px 0 0 0;
         }
@@ -170,6 +165,55 @@ header {
     
         .selected-page {
             color: $primary;
+        }
+
+        .mobile-nav {
+            position: absolute;
+            top: -20px;
+            right: 2px;
+
+            display: grid;
+
+            background: #5952a89e;
+            border-radius: 11%;
+
+            // padding: 10px 25px 10px 30px;
+            padding: 0;
+            height: 0;
+            overflow: hidden;
+
+            transition: height 0.4s linear, padding 0.2s linear 0.2s;
+
+            li {
+                text-align: right;
+                margin: 0;
+
+                a {
+                    padding: 2px;
+                }
+            }
+
+            .hamburger a {
+                width: 100%;
+            }
+        }
+
+        .visible {
+            transition: height 0.4s ease-out, padding;
+            padding: 10px 25px 10px 30px;
+            height: 230px;
+        }
+
+        .hamburger {
+            display: none;
+            padding: 30px;
+            font-size: 2rem;
+
+        }
+
+        .hamburger.hidden {
+            // display: none;
+            visibility: hidden;
         }
     }
 

@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,22 +9,31 @@
 
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@700&family=Lato&display=swap" rel="stylesheet">
-    
+
     <script src="https://kit.fontawesome.com/aca4e15455.js" crossorigin="anonymous"></script>
-    
+
     <link rel="stylesheet" href="./styles/style.css">
 </head>
 
 <body>
     <header class="contact-header">
         <nav class="navigation flex-container wrapper">
-            <ul class="flex-container">
+            <ul class="desktop-nav flex-container">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="./index.html#home-about">About</a></li>
                 <li><a href="./blog.html">Blog</a></li>
                 <li><a href="#" class="selected-page">Contact</a></li>
             </ul>
+
             <a href="#" class="hamburger fas fa-bars"></a>
+
+            <ul class="mobile-nav hidden">
+                <li><a href="#" class="hamburger fas fa-times"></a></li>
+                <li><a href="./index.html">Home</a></li>
+                <li><a href="./index.html#home-about">About</a></li>
+                <li><a href="./blog.html">Blog</a></li>
+                <li><a href="#" class="selected-page">Contact</a></li>
+            </ul>
         </nav>
         <h2>Get in touch</h2>
         <div class="contact-sheet">
@@ -87,5 +97,8 @@
     <footer>
         <p>Copyright © 2021 Juno College</p>
     </footer>
+
+    <script src="./script.js"></script>
 </body>
+
 </html>
